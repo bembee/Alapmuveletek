@@ -1,5 +1,7 @@
 package alapmuvgyak;
 
+import javax.swing.JOptionPane;
+
 public class Muveletek extends javax.swing.JFrame {
 
     /**
@@ -277,11 +279,15 @@ public class Muveletek extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnEllenorzesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEllenorzesActionPerformed
-        
+        if (Integer.parseInt(txtEredmeny.getText()) == 3) {
+            lblValasz.setText("Jó válasz");
+        } else {
+            lblValasz.setText("Rossz válasz");
+        }
     }//GEN-LAST:event_btnEllenorzesActionPerformed
 
     private void btnMegoldasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMegoldasActionPerformed
-        
+
     }//GEN-LAST:event_btnMegoldasActionPerformed
 
     private void mnuMuveletekKivonasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuMuveletekKivonasActionPerformed
@@ -289,7 +295,7 @@ public class Muveletek extends javax.swing.JFrame {
     }//GEN-LAST:event_mnuMuveletekKivonasActionPerformed
 
     private void mnuMuveletekOsztasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuMuveletekOsztasActionPerformed
-        // TODO add your handling code here:
+        lblFeladat.setText("9 / 3");
     }//GEN-LAST:event_mnuMuveletekOsztasActionPerformed
 
     /**
